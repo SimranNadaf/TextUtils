@@ -85,7 +85,7 @@ export default function Textfield(props) {
     
   return(
      <>
-        <div className="mx-3 mb-3 container" style={{"color":props.mode==="light"?"black":props.mode==="warning"?"black":props.mode==="info"?"black":"white"}}>
+        <div className="mx-3 mb-3 container" style={{color:props.mode==="light" ? "black" : props.mode==="warning" ? "black" : props.mode==="info" ? "black" : "white"}}>
         <h1>{props.title}</h1>
         <textarea className="form-control" id="textfield" style={{backgroundColor:"white", color:"black"}} rows="8" onChange={changetext} value={text}></textarea>
         <br/>
